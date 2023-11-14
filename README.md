@@ -6,16 +6,17 @@ Gamers' Arena, a leading video game information website, is exploring a subscrip
 ### Objective
 As the analytics lead, the goal is to create a dashboard addressing key questions:
 
-<small>1. Subscription Overview
+<small>
+1. Subscription Overview
 - Total number of games
 - Total global sales (in millions of USD)
 - Average CriticScore
-- Total number of users</small>
+- Total number of users
 
-<small>2. Top-N Rankings
+2. Top-N Rankings
 - Top-N games based on GlobalSales
 - Top-N platforms based on GlobalSales
-- Top-N genres based on GlobalSales</small>
+- Top-N genres based on GlobalSales
 
 3. GlobalSales Distribution
 - Distribution of GlobalSales across platforms
@@ -27,6 +28,7 @@ As the analytics lead, the goal is to create a dashboard addressing key question
 5. User Ratings and UserScore
 - Top-N games based on the number of users rated
 - Average UserScore for the top-N games
+</small>
 
 ### Data Description
 The video_games.xlsx dataset includes information about games, release years, platforms, genres, sales, UserScore, and CriticScore.
