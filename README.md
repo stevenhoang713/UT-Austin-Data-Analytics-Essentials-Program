@@ -12,7 +12,7 @@ As the analytics lead, the goal is to create a dashboard addressing key question
 - Total global sales (in millions of USD)
 - Average CriticScore
 - Total number of users
-
+  
 2. Top-N Rankings
 - Top-N games based on GlobalSales
 - Top-N platforms based on GlobalSales
