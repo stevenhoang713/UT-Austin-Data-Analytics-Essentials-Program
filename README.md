@@ -7,6 +7,7 @@ Gamers' Arena, a leading video game information website, is exploring a subscrip
 As the analytics lead, the goal is to create a dashboard addressing key questions:
 
 <small>
+  
 1. Subscription Overview
 - Total number of games
 - Total global sales (in millions of USD)
@@ -28,6 +29,7 @@ As the analytics lead, the goal is to create a dashboard addressing key question
 5. User Ratings and UserScore
 - Top-N games based on the number of users rated
 - Average UserScore for the top-N games
+  
 </small>
 
 ### Data Description
