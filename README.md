@@ -37,4 +37,4 @@ The video_games.xlsx dataset includes information about games, release years, pl
 - Microsoft Excel for data process
 
 ### Dashboard 
-<kbd><img width="1425" src="https://github.com/stevenhoang713/Gamers-Arena/assets/145725846/c1b5863e-8184-43bb-99fc-9b92cabeed28)https://github.com/stevenhoang713/Gamers-Arena/assets/145725846/c1b5863e-8184-43bb-99fc-9b92cabeed28.png"></kbd>
+<kbd><img width="1425" alt="image" src="https://github.com/stevenhoang713/Gamers-Arena/assets/145725846/c1b5863e-8184-43bb-99fc-9b92cabeed28)https://github.com/stevenhoang713/Gamers-Arena/assets/145725846/c1b5863e-8184-43bb-99fc-9b92cabeed28.png"></kbd>
