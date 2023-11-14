@@ -27,3 +27,14 @@ As the analytics lead, the goal is to create a dashboard addressing key question
 5. User Ratings and UserScore
 - Top-N games based on the number of users rated
 - Average UserScore for the top-N games
+
+### Data Description
+The video_games.xlsx dataset includes information about games, release years, platforms, genres, sales, UserScore, and CriticScore.
+
+### Tools 
+- Tableau for Dashboard creation and data visualization
+
+- Microsoft Excel for data process
+
+### Dashboard 
+<kbd><img width="1425" src="https://github.com/stevenhoang713/Gamers-Arena/assets/145725846/c1b5863e-8184-43bb-99fc-9b92cabeed28)https://github.com/stevenhoang713/Gamers-Arena/assets/145725846/c1b5863e-8184-43bb-99fc-9b92cabeed28.png"></kbd>
