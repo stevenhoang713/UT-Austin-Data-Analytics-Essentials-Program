@@ -33,7 +33,7 @@ As the analytics lead, the goal is to create a dashboard addressing key question
 </small>
 
 ### Data Description
-The video_games.xlsx dataset includes information about games, release years, platforms, genres, sales, UserScore, and CriticScore.
+The [video_games.csv](Business Analytics Case Study/video_games.csv) dataset includes information about games, release years, platforms, genres, sales, UserScore, and CriticScore.
 
 ### Tools 
 - Tableau for dashboard creation and data visualization - View [dashboard](https://public.tableau.com/views/GamersArenaProject_16922536832620/GamersArenaDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
