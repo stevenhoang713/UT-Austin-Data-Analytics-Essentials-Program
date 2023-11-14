@@ -36,7 +36,7 @@ As the analytics lead, the goal is to create a dashboard addressing key question
 The video_games.xlsx dataset includes information about games, release years, platforms, genres, sales, UserScore, and CriticScore.
 
 ### Tools 
-- Tableau for Dashboard creation and data visualization
+- Tableau for dashboard creation and data visualization - View [dashboard](https://public.tableau.com/views/GamersArenaProject_16922536832620/GamersArenaDashboard?:language=en-US&:display_count=n&:origin=viz_share_link)
 - Microsoft Excel for data process
 
 ### Dashboard 
