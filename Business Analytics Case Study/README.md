@@ -1,4 +1,4 @@
-# Gamers' Arena Sales Model Analysis 
+# 🎮 Gamers' Arena Sales Model Analysis 
 
 ### Business Context
 Gamers' Arena, a leading video game information website, is exploring a subscription model to attract more gamers. The platform tracks game releases, sales, and user interactions across genres and platforms. The objective is to design an interactive dashboard that assists the company director in making informed decisions about the new subscription model.
