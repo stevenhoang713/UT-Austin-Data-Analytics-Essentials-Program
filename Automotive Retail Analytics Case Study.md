@@ -24,16 +24,16 @@ Customer distribution across states is varied, with California and Texas having 
 
 ````sql
 with rated_orders as (
-       select order_id
-	        , quarter_number
-	        , case when customer_feedback like 'very bad' then 1
-				   when customer_feedback like 'bad' then 2
-				   when customer_feedback like 'okay' then 3
-				   when customer_feedback like 'good' then 4 
-		           else 5
-		       end as rating
-		 from order_t
-		      )
+  select order_id
+       , quarter_number
+       , case when customer_feedback like 'very bad' then 1
+              when customer_feedback like 'bad' then 2
+              when customer_feedback like 'okay' then 3
+              when customer_feedback like 'good' then 4 
+              else 5
+         end as rating
+    from order_t
+)
 select quarter_number
      , round(avg(rating),2) as avg_rating
   from rated_orders
