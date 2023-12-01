@@ -53,20 +53,20 @@ The average rating decreases progressively across quarters, starting at 3.55 in 
 
 ````sql
 with quarterly_feedback_summary as (
-	select quarter_number
-         , sum(case when customer_feedback = 'very good' then 1 else 0 end) as very_good
-		 , sum(case when customer_feedback = 'good' then 1 else 0 end) as good
-         , sum(case when customer_feedback = 'okay' then 1 else 0 end) as okay
-         , sum(case when customer_feedback = 'bad' then 1 else 0 end) as bad
-         , sum(case when customer_feedback = 'very bad' then 1 else 0 end) as very_bad
-         , count(customer_feedback) as total_feedback
-	  from order_t
-  group by quarter_number
-  order by quarter_number
-           ) 
+  select quarter_number
+       , sum(case when customer_feedback = 'very good' then 1 else 0 end) as very_good
+       , sum(case when customer_feedback = 'good' then 1 else 0 end) as good
+       , sum(case when customer_feedback = 'okay' then 1 else 0 end) as okay
+       , sum(case when customer_feedback = 'bad' then 1 else 0 end) as bad
+       , sum(case when customer_feedback = 'very bad' then 1 else 0 end) as very_bad
+       , count(customer_feedback) as total_feedback
+    from order_t
+   group by quarter_number
+   order by quarter_number
+) 
 select quarter_number
-	 , round((very_good/total_feedback),2) as very_good
-	 , round((good/total_feedback),2) as good
+     , round((very_good/total_feedback),2) as very_good
+     , round((good/total_feedback),2) as good
      , round((okay/total_feedback),2) as okay
      , round((bad/total_feedback),2) as bad
      , round((very_bad/total_feedback),2) as very_bad
@@ -108,18 +108,16 @@ The top 5 vehicle makers preferred by customers, based on the number of vehicles
 
 ````sql
 select *
-  from (
-  select state
-	   , vehicle_maker
-	   , count(customer_id) as total_customers
-	   , rank() over (partition by state order by count(customer_id) desc) as ranking
-	from product_t
-	join order_t using (product_id)
-	join customer_t using (customer_id)
-   group by state
-		  , vehicle_maker
-		 )   
-	as _top_vehicle_makers
+  from (select state
+	     , vehicle_maker
+	     , count(customer_id) as total_customers
+	     , rank() over (partition by state order by count(customer_id) desc) as ranking
+	  from product_t
+	  join order_t using (product_id)
+	  join customer_t using (customer_id)
+         group by state
+                , vehicle_maker
+)  as _top_vehicle_makers
  where ranking = 1
  order by total_customers desc;
 ````
@@ -155,12 +153,12 @@ The trend of total orders declined across quarters, with a notable decrease from
 
 ````sql
 with qtr_rev_summary as (
-            select quarter_number
-                 , round(SUM(quantity * vehicle_price),2) as revenue
-			  from order_t
-          group by quarter_number
-	      order by quarter_number 
-				)
+  select quarter_number
+       , round(sum(quantity * vehicle_price),2) as revenue
+    from order_t
+   group by quarter_number
+   order by quarter_number 
+)
 select quarter_number
      , revenue
      , lag(revenue) over (order by quarter_number) as prev_revenue
